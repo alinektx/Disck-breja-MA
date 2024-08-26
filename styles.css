@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --main-color: #741f07;
+  --second-color: #282120;
+}
+section {
+  padding: 100px 10%;
+}
+*::selection {
+  color: #fff;
+  background: var(--main-color);
+}
+
+img {
+  width: 70%;
+}
+header.sticky {
+  background: #ffffff;
+  box-shadow: 0 4px 41px rgba(0, 0, 0, 0.1);
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 4px 41px;
+  padding: 15px 10%;
+  transition: 0.2s;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 50px; /* TAMANHO CABERSARIO LOGO*/
+}
+
+.navbar {
+  display: flex;
+}
+.navbar a {
+  font-size: 1rem;
+  padding: 11px 20px;
+  color: var(--second-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+.home {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 10 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  gap: 1rem;
+  padding-top: 7rem;
+  background-color: rgba(155, 199, 227, 0.874); /* CORO FUNDO DA CAPA 1 PAFGINA*/
+}
+.home-text {
+  flex: 1 1 17rem;
+}
+.home-text h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-weight: 700;
+  line-height: 1;
+}
+.home-text h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--second-color);
+  line-height: 1.4;
+  margin: 0.5rem 0 1.4rem;
+}
+.home-img {
+  flex: 1 1 18rem;
+  text-align: center;
+  margin-top: 2rem;
+  animation: animate 3s linear infinite;
+  padding-left: 10px;
+  margin-left: 40px;
+}
+
+.home-img img {
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-10px, 0);
+  }
+  50% {
+    transform: translate(-0px, -10px);
+  }
+  100% {
+    transform: translate(-10px, 0);
+  }
+}
+.home-text span {
+  color: var(--main-color);
+}
+.home-text h1 {
+  font-size: 3.2rem;
+  color: var(--main-color);
+  font-weight: bolder;
+}
+.home-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600; /* taamnho da fonte senador la roque*/
+  color: var(--second-color);
+  text-transform: uppercase;
+  margin: 0.5rem 0 1.4rem;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.heading span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+.heading h1 {
+  font-size: 3rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin: 0.5rem 0 1.4rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.sinopse-img {
+  flex: 1 1 21rem;
+}
+.sinopse-text {
+  flex: 1 1 21rem;
+}
+.sinopse-text h2 {
+  font-size: 1.8rem;
+  color: var(--second-color);
+  text-transform: uppercase;
+  margin: 0.5rem 0 1rem;
+
+}
+deliver-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--second-color);
+  margin-bottom: 1rem;
+  
+}
+.character {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 167, 4); /* COR 3 PAGINAS*/
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+
+  > figure {
+    width: 210px;
+    height: 240px;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    border: 1px solid #000;
+  }
+  figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  figure:hover {
+    --_i: 0%;
+  }
+  figure > * {
+    transition: 0.5s;
+  }
+  figure figcaption {
+    position: relative;
+    bottom: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.75rem;
+    background: var(--c, #0009);
+    clip-path: inset(0 var(--_i, 100%) 0 0);
+    -webkit-mask: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+  }
+  figure:hover figcaption {
+    --_i: 0%;
+  }
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+      -webkit-mask: none;
+      color: #fff;
+    }
+  }
+}
+
+.moment {
+  padding: 100px 10%;
+  color: #fff;
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+}
+
+.moment-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.moment-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.moment-card {
+  width: calc(45% - 10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 80px;
+  border-radius: 10px;
+}
+
+.moment-card p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.moment-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.moment-card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background: var(--second-color);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1911px;
+}
+.footer .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.texto-justificado {
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .home-text {
+    margin-top: 40px;
+  }
+  header {
+    padding: 11px 4%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(14, 55, 54, 0.14);
+    border-top: 2px solid var(--main-color);
+    transition: 0.2s;
+    text-align: left;
+  }
+  /* Menu aparece quando recebe a classe "active" */
+  header .navbar.active {
+    display: flex;
+  }
+
+  header .navbar a {
+    padding: 0.5rem;
+    display: block;
+    color: var(--second-color);
+  }
+
+  .home {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .home-text span {
+    font-size: 0.9rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .home-text h2 {
+    font-size: 1.2rem;
+  }
+
+  figure figcaption {
+    --_i: 0%;
+  }
+
+  .moment-card {
+    width: 100%;
+    padding: 30px;
+  }
+}
+.moment-card {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.moment-card img {
+    width: 100%;
+    height: auto;
+}
+
+.inscreva-se-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espaço abaixo do botão "Inscreva-se" */
+}
+
+.inscreva-se-btn:hover {
+    background-color: #0056b3; /* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+.inscricao-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.inscricao-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #28a745; /* Cor de fundo do botão de envio */
+    color: white; /* Cor do texto do botão de envio */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #218838; /* Cor de fundo quando o mouse passa sobre o botão de envio */
+}
+
